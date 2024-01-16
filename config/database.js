@@ -2,17 +2,7 @@ const { Sequelize } = require('sequelize');
 const dotenv = require('dotenv');
 dotenv.config();
 
-// const sequelize = new Sequelize(
-//     "shoppinglist",
-//     "amirmeisner",
-//     "amirm363",
-//     {
-//         host: 'shoppinglist.coo8a2vfng65.us-east-1.rds.amazonaws.com',
-//         port: "3306",
-//         dialect: 'mysql',
-//         logging: console.log,
-//     }
-// );
+// Create a new Sequelize instance
 const sequelize = new Sequelize(
     process.env.DB_NAME,
     process.env.DB_USER,

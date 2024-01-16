@@ -1,6 +1,7 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../../config/database');
 
+// Define the Category model
 const Category = sequelize.define('Category', {
     name: {
         type: DataTypes.STRING,
